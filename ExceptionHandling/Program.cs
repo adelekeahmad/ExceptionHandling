@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 namespace exceptionHandling;
 class Program
-{
+{  
     static void Main(string[] args)
     {
         try
@@ -37,9 +37,9 @@ class Program
                 Console.Write("you win!");
             }
         }
-        catch
+        catch(Exception e)
         {
-            Console.WriteLine("GoodBye");
+            Console.Write(e.Message);
         }
         
         Console.ReadLine();
